@@ -372,7 +372,13 @@ path = Path()
 print(path.glob('*.*'))#点后面的可以变成文件名.py之类
 for file in path.glob('*'):
     print(file)
-
+#028读取excel
+import pandas as pd
+df = pd.read_csv('vgsales.csv')
+print(df)
+print(df.shape)
+print(df.describe())
+df.describe()
 
 
 
